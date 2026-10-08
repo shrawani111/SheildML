@@ -1,0 +1,45 @@
+ShieldML FastAPI Latency Benchmark
+==================================
+
+Model:
+RF + XGBoost + LightGBM Equal-Weight Soft Voting Ensemble
+
+Benchmark Configuration:
+- Endpoint: POST /predict
+- Requests: 100
+- Warm-up request: 1
+- Environment: Local FastAPI/Uvicorn
+- Host: 127.0.0.1
+- Port: 8000
+- Random Forest serving threads: 1
+
+Results:
+- Average latency: 38.39 ms
+- P95 latency: 41.26 ms
+- Minimum latency: 35.36 ms
+- Maximum latency: 67.05 ms
+
+Requirement:
+- Target latency: <50 ms
+
+Status:
+PASSED
+
+Optimization:
+The trained Random Forest model was retained without retraining.
+For API serving, Random Forest inference was configured with
+n_jobs=1 instead of n_jobs=-1 to reduce CPU thread-management
+overhead for single-transaction inference.
+
+Previous benchmark:
+- Average: 75.07 ms
+- P95: 110.65 ms
+
+Optimized benchmark:
+- Average: 38.39 ms
+- P95: 41.26 ms
+
+Conclusion:
+The ShieldML /predict endpoint satisfies the required
+sub-50 ms P95 latency target under the tested local
+100-request benchmark.

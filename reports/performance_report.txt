@@ -1,0 +1,29 @@
+ShieldML - Financial Fraud Detection
+============================================================
+
+Model: Equal-Weight Soft Voting Ensemble
+Base Models: Random Forest, XGBoost, LightGBM
+
+Threshold Selection
+------------------------------------------------------------
+Validation F2-optimal threshold: 0.1850
+Validation F2: 0.8451
+
+Final Test Performance
+------------------------------------------------------------
+ROC-AUC: 0.9744
+PR-AUC: 0.7645
+Precision: 0.6000
+Recall: 0.7500
+F2 Score: 0.7143
+
+Confusion Matrix
+------------------------------------------------------------
+TN: 42481
+FP: 26
+FN: 13
+TP: 39
+
+Feature Engineering Note
+------------------------------------------------------------
+The supplied credit-card dataset does not contain merchant ID, device fingerprint, or location fields. Therefore, transaction-history behavioral proxy features were used instead of fabricating unavailable attributes.

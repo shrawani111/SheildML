@@ -1,0 +1,33 @@
+ShieldML - SHAP Explainability Report
+============================================================
+
+Model: XGBoost
+Explainer: SHAP TreeExplainer
+SHAP sample size: 1,000
+
+Top Features by Mean Absolute SHAP Value
+------------------------------------------------------------
+V4                                  1.949589
+V14                                 1.726441
+V12                                 1.217902
+V11                                 0.800782
+V10                                 0.764261
+Time                                0.642520
+V1                                  0.623913
+V8                                  0.536925
+V3                                  0.375851
+V19                                 0.328123
+V17                                 0.296915
+V24                                 0.296607
+V26                                 0.288554
+V7                                  0.280967
+V22                                 0.276051
+
+Generated SHAP Artifacts
+------------------------------------------------------------
+shap_summary.png
+shap_bar.png
+shap_waterfall_1.png
+shap_waterfall_2.png
+shap_waterfall_3.png
+shap_feature_importance.csv

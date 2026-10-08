@@ -1,10 +1,15 @@
-venv/
+﻿venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
 data/raw/*.csv
 data/processed/*.csv
+
 models/*.pkl
 models/*.joblib
+
 mlruns/
+mlflow.db
+
 .env
