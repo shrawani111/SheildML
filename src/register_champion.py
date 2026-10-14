@@ -31,10 +31,10 @@ metrics = {
     "test_recall": 0.7500,
     "test_f2": 0.7143,
     "fraud_threshold": 0.1850,
-    "api_p95_latency_ms": 13.69
+    "api_p95_latency_ms": 41.26
 }
 
-with mlflow.start_run(run_name="ShieldML-Champion-XGBoost") as run:
+with mlflow.start_run(run_name="ShieldML-XGBoost-Registration") as run:
 
     run_id = run.info.run_id
 

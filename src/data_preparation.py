@@ -3,7 +3,7 @@ import numpy as np
 from pathlib import Path
 
 
-RAW_PATH = Path("data/raw/creditcard.csv")
+RAW_PATH = Path("data/creditcard.csv")
 PROCESSED_DIR = Path("data/processed")
 
 

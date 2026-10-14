@@ -13,3 +13,9 @@ mlruns/
 mlflow.db
 
 .env
+# Credit-card transaction datasets
+data/*.csv
+data/**/*.csv
+
+# Generated Python artifacts
+reports/
